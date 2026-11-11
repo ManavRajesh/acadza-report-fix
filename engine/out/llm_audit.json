@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "total_issues_found": 15,
+    "unique_questions_affected": 14,
+    "reported_issues": 15,
+    "unreported_issues": 0
+  },
+  "solution_final_answers": {
+    "60ca4feb6420652745f55522": "C",
+    "68dea616d0cda73d07e93ae6": "2",
+    "68dea715387eea3d0d95f790": "3113",
+    "61ee6c9d90a1a968a168686b": "B",
+    "68c9ae5afb6b2f16e2d43b1c": "D",
+    "68dea87d387eea3d0d95fbe3": "A",
+    "696a866665252c04fc1f81c2": "50",
+    "63c7cce12981ed154ee92c94": "C",
+    "68dea619d0cda73d07e93aee": "4",
+    "68e872546e45ba37dcc16bc0": null,
+    "66fe9dbe22132e5a70a3e579": "D",
+    "620e23cecc50543bc7db9186": "B",
+    "6208e80a9cb2ab67dac61bd0": "C",
+    "68dea657387eea3d0d95f54a": "5",
+    "61dffbec08489156b684bd22": "A",
+    "68e870ef42c06737d6e565c4": "D",
+    "68e8734442c06737d6e56da4": "A",
+    "6956d79788d7701e5617bc29": "B",
+    "695ee00b88d7701e561aabc5": "D",
+    "622df25ab70e4b50e44ff837": "B",
+    "6208e298fa399567e0878700": "A",
+    "695ede2a88d7701e561aa9d9": "D",
+    "612151a6a34397610a9a2e58": "B",
+    "60f742f6660d187cc13a8078": "C",
+    "68f21df0941cda588bc0470b": "A",
+    "6264197209f4fd65f58f5707": "C",
+    "617fa18efd53ff1629ed890f": "D",
+    "6062ec84518e9535e120c422": "A",
+    "5fc60508028950133eac8963": "20",
+    "68dea6e6387eea3d0d95f6f8": "16",
+    "68f21caf941cda588bc04365": "B",
+    "60f744b3f1b9bc7cc7b4a949": "A",
+    "68c801bc1b1dbc16dc93bf2b": "A",
+    "68dea577d0cda73d07e9391c": "14",
+    "636283dbe3770c24f866e6d6": "B",
+    "6263d75bdd44e265ef926d97": "40 cm",
+    "622f08d7b70e4b50e4500a1b": "C",
+    "63765a28f1d8416ae0408d89": "C",
+    "68c8153cfb6b2f16e2d3ceaf": null,
+    "6956d7e988d7701e5617bd3e": "D",
+    "6956d7bb23cb221e570d6013": "B",
+    "68dea7c2387eea3d0d95f9bb": "8",
+    "68ecbacb2ec87a18deba1ad7": "B"
+  },
+  "unreported_defects": [],
+  "issues": [
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "type": "missing_option",
+      "taxonomy_repair": "option_repair",
+      "field": "question",
+      "detail": "Option (C) is completely empty, making the multiple-choice question defective.",
+      "evidence_quote": "(C)",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "61dffbec08489156b684bd22",
+      "type": "spelling",
+      "taxonomy_repair": "spelling",
+      "field": "question",
+      "detail": "Misspelling of the word 'Epithelial' as 'Epithellial' and 'tissue' as 'tisue' in option (A).",
+      "evidence_quote": "Epithellial tisue",
+      "severity": "medium",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R012"
+      ]
+    },
+    {
+      "questionId": "68e870ef42c06737d6e565c4",
+      "type": "wrong_answer_key",
+      "taxonomy_repair": "answer_key",
+      "field": "answer",
+      "detail": "The stored answer key is A, but the solution correctly calculates 4800 N/m^2 which corresponds to option D.",
+      "evidence_quote": "P = (1)/(3) × 9 × 10^(− 2) × ( 400 )^(2) = 4800 N / m^(2)",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R004"
+      ]
+    },
+    {
+      "questionId": "68e8734442c06737d6e56da4",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution contains arithmetic errors in the equations of motion for mass and acceleration.",
+      "evidence_quote": "2 F − μ 100 = 100",
+      "severity": "high",
+      "confidence": 0.95,
+      "reported": true,
+      "reportIds": [
+        "R029"
+      ]
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "type": "identical_options",
+      "taxonomy_repair": "identical_options",
+      "field": "question",
+      "detail": "Options B and C are identical (both are '0 W').",
+      "evidence_quote": "(B) 0 W\n(C) 0 W",
+      "severity": "medium",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R015"
+      ]
+    },
+    {
+      "questionId": "695ee00b88d7701e561aabc5",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution contradicts itself. It correctly derives that I = I_0, thereby proving Assertion A is true, but then incorrectly concludes that A is false and selects D as the answer key.",
+      "evidence_quote": "Thus, the intensity is equal to the intensity of one wave. Therefore, assertion (A) is true. Reason (R) is correct because the resultant intensity in interference can indeed be the sum of the individual intensities when the phase difference is non-zero. However, in the case of a phase difference of (π)/(2) , the intensities do not simply add up; they are modified by the interference effect. Thus, the correct answer is (d), as assertion (A) is false but reason (R) is true.",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R034"
+      ]
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "type": "spelling",
+      "taxonomy_repair": "spelling",
+      "field": "question",
+      "detail": "Misspelling of the word 'hemispherical' as 'hemispherial' in the question stem.",
+      "evidence_quote": "End 1 has a hemispherial soap bubble of radius r .",
+      "severity": "low",
+      "confidence": 0.99,
+      "reported": true,
+      "reportIds": [
+        "R025"
+      ]
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution contains corrupted/garbled mathematical text and notation.",
+      "evidence_quote": "∴ P_(2) r_(1) )",
+      "severity": "high",
+      "confidence": 0.99,
+      "reported": true,
+      "reportIds": [
+        "R025"
+      ]
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution text is completely corrupted with nonsense symbols and broken equations like 'I = (h)/(| I |)' and wrong intermediate steps, making it unreadable.",
+      "evidence_quote": "= 5.469 × 10^(− 10) m = 5.47 \\AA λ = (h)/(| p |) = (h)/(| I |) = 2.65 × 10^(− 18) J = 16.8 e V",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R018",
+        "R019"
+      ]
+    },
+    {
+      "questionId": "60f742f6660d187cc13a8078",
+      "type": "stem_data",
+      "taxonomy_repair": "stem_data",
+      "field": "question",
+      "detail": "The inductance value (L) is missing from the question stem but is used in the solution.",
+      "evidence_quote": "A resistance of 40 ohm and an inductance are connected in series",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R008",
+        "R007"
+      ]
+    },
+    {
+      "questionId": "6062ec84518e9535e120c422",
+      "type": "notation",
+      "taxonomy_repair": "notation",
+      "field": "solution",
+      "detail": "Corrupted or broken notation for units in the solution.",
+      "evidence_quote": "α = (Δ L)/(L_(0) ( Δ θ )) = (0.19)/(100 ( 100 − 0 )) = 1.9 × 10^(− 5) / A C γ = 3 a = 3 × 1.9 × 10^(− 5) / C = 5.7 × 10^(− 5) / C C",
+      "severity": "medium",
+      "confidence": 0.95,
+      "reported": true,
+      "reportIds": [
+        "R027"
+      ]
+    },
+    {
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "type": "wrong_answer_key",
+      "taxonomy_repair": "answer_key",
+      "field": "answer",
+      "detail": "The stored solution correctly computes the supply voltage as 50 V, which corresponds to option (A), but the stored answer key is C.",
+      "evidence_quote": "V = sqrt(V_(R)^(2) + ( V_(L) − V_(C) )^(2)) = sqrt(( 40 )^(2) + ( 60 − 30 )^(2)) = 50 V",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R002",
+        "R003",
+        "R001"
+      ]
+    },
+    {
+      "questionId": "6263d75bdd44e265ef926d97",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution contains a critical arithmetic and formula error. It equates mass 800 g directly with volume (2 * a^2) instead of using buoyancy principles properly (Bouyant force = weight of displaced water). Specifically, mass = volume * density implies 800 = (2 cm) * a^2 * (1 g/cm^3), which gives a^2 = 400 and a = 20 cm, but the solution incorrectly writes 'a = 40 cm' at the end while the answer key correctly has '20'.",
+      "evidence_quote": "800 × g = (2) × (a 2 ) × 1 × g\na = 40 cm",
+      "severity": "high",
+      "confidence": 1.0,
+      "reported": true,
+      "reportIds": [
+        "R016"
+      ]
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "type": "solution_error",
+      "taxonomy_repair": "solution_fix",
+      "field": "solution",
+      "detail": "The stored solution contains a formula typo where magnetic force is written as F = q ( V × B ) without the vector cross product being properly formatted, and the explanation is extremely incomplete and unhelpful for a multiple-correct question.",
+      "evidence_quote": "conceptual Based of field force\nF = q ( V × B )\nF = q E",
+      "severity": "medium",
+      "confidence": 0.9,
+      "reported": true,
+      "reportIds": [
+        "R020"
+      ]
+    },
+    {
+      "questionId": "68ecbacb2ec87a18deba1ad7",
+      "type": "wrong_chapter",
+      "taxonomy_repair": "wrong_chapter",
+      "field": "chapter",
+      "detail": "The question pertains to human physiology and neural conduction, which belongs to Animal Physiology rather than Botany: The Living World.",
+      "evidence_quote": "The absolute refractory period during an action potential generation is primarily caused by:",
+      "severity": "high",
+      "confidence": 0.99,
+      "reported": true,
+      "reportIds": [
+        "R023"
+      ]
+    }
+  ]
+}

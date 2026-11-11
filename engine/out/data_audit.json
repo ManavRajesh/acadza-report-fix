@@ -1,0 +1,269 @@
+{
+  "summary": {
+    "total_detections": 24,
+    "unique_questions_affected": 22,
+    "reported_defects": 22,
+    "unreported_defects": 2
+  },
+  "unreported_defects": [
+    {
+      "questionId": "68dea87d387eea3d0d95fbe3",
+      "check": "empty_mathml_base",
+      "detail": "Question HTML has empty MathML base '<msup><mi></mi>' for unit volt^-1.",
+      "severity": "low",
+      "reported": false,
+      "reportIds": []
+    },
+    {
+      "questionId": "68dea657387eea3d0d95f54a",
+      "check": "solution_ocr_typo",
+      "detail": "Solution contains OCR typo in subscript text ('P_eqcu' / 'P_eqch' instead of 'P_each').",
+      "severity": "low",
+      "reported": false,
+      "reportIds": []
+    }
+  ],
+  "detections": [
+    {
+      "questionId": "68dea616d0cda73d07e93ae6",
+      "check": "solution_calculated_answer_mismatch",
+      "detail": "Solution derives total flux ϕ = q/(2ε_0) (comparing with nq/(2ε_0) gives n=1), but answer key is set to 2.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R005"
+      ]
+    },
+    {
+      "questionId": "61ee6c9d90a1a968a168686b",
+      "check": "spelling_error",
+      "detail": "Spelling mistake in Option (D): 'Choroid plexux' instead of 'Choroid plexus'.",
+      "severity": "low",
+      "reported": true,
+      "reportIds": [
+        "R022"
+      ]
+    },
+    {
+      "questionId": "68dea87d387eea3d0d95fbe3",
+      "check": "empty_mathml_base",
+      "detail": "Question HTML has empty MathML base '<msup><mi></mi>' for unit volt^-1.",
+      "severity": "low",
+      "reported": false,
+      "reportIds": []
+    },
+    {
+      "questionId": "696a866665252c04fc1f81c2",
+      "check": "missing_stem_data",
+      "detail": "Question asks for volume contraction of copper cube but omits the initial edge length / volume (solution assumes 10 cm).",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R006"
+      ]
+    },
+    {
+      "questionId": "63c7cce12981ed154ee92c94",
+      "check": "wrong_chapter",
+      "detail": "Parallel plate capacitor displacement current problem filed under 'Geometrical optics and optical instruments'.",
+      "severity": "medium",
+      "reported": true,
+      "reportIds": [
+        "R042"
+      ]
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "blank_option",
+      "detail": "Option (C) exists but its body is completely blank/empty.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "answer_key_points_to_blank",
+      "detail": "Answer key is set to (C), but option (C) is blank.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "68dea657387eea3d0d95f54a",
+      "check": "solution_ocr_typo",
+      "detail": "Solution contains OCR typo in subscript text ('P_eqcu' / 'P_eqch' instead of 'P_each').",
+      "severity": "low",
+      "reported": false,
+      "reportIds": []
+    },
+    {
+      "questionId": "61dffbec08489156b684bd22",
+      "check": "spelling_error",
+      "detail": "Spelling mistake in Option (A): 'Epithellial tisue' instead of 'Epithelial tissue'.",
+      "severity": "low",
+      "reported": true,
+      "reportIds": [
+        "R012"
+      ]
+    },
+    {
+      "questionId": "68e870ef42c06737d6e565c4",
+      "check": "solution_calculated_answer_mismatch",
+      "detail": "Solution computes P = 4800 N/m^2 (Option D), but answer key is set to A (4556 N/m^2).",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R004"
+      ]
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "check": "identical_options",
+      "detail": "Options (B) and (C) have identical text: '0 W'.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R015"
+      ]
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "check": "missing_figure",
+      "detail": "Question stem explicitly references a figure/diagram ('as shown in figure'), but no image is embedded or attached.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R025"
+      ]
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "check": "stray_copied_solution_fragment",
+      "detail": "Solution begins with a hanging '=' and calculation from a different question ('= 5.469 × 10^-10 m = 5.47 Å').",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R018",
+        "R019"
+      ]
+    },
+    {
+      "questionId": "60f742f6660d187cc13a8078",
+      "check": "missing_stem_data",
+      "detail": "Question mentions 'and an inductance are connected' without specifying the numerical value of inductance L (solution uses 95.5 mH).",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R008",
+        "R007"
+      ]
+    },
+    {
+      "questionId": "617fa18efd53ff1629ed890f",
+      "check": "exam_reference",
+      "detail": "Exam reference tag '(NEET 2019)' embedded inside question text.",
+      "severity": "low",
+      "reported": true,
+      "reportIds": [
+        "R013"
+      ]
+    },
+    {
+      "questionId": "5fc60508028950133eac8963",
+      "check": "missing_answer_form",
+      "detail": "Integer question asks for frictional force but does not specify the unit '(in N)' for numeric entry.",
+      "severity": "low",
+      "reported": true,
+      "reportIds": [
+        "R024"
+      ]
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "check": "mcq_answer_contains_empty_string",
+      "detail": "MCQ answer list contains an empty string artifact: ['', 'B'].",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R021"
+      ]
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "check": "type_mismatch_single_mcq",
+      "detail": "Stored as MCQ with answer ['', 'B'], but has only 1 valid option 'B'. Should be SCQ.",
+      "severity": "medium",
+      "reported": true,
+      "reportIds": [
+        "R021"
+      ]
+    },
+    {
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "check": "solution_calculated_answer_mismatch",
+      "detail": "Solution computes V = 50 V (Option A), but answer key is set to C (130 V).",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R002",
+        "R003",
+        "R001"
+      ]
+    },
+    {
+      "questionId": "6263d75bdd44e265ef926d97",
+      "check": "solution_arithmetic_error",
+      "detail": "Solution step has arithmetic error: writes 'a = 40 cm' (from a^2 = 400), but key is correctly 20.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R016"
+      ]
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "check": "missing_option",
+      "detail": "Question has only 3 options (A, B, C); option(s) D missing entirely.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R010",
+        "R009"
+      ]
+    },
+    {
+      "questionId": "63765a28f1d8416ae0408d89",
+      "check": "markup_leak",
+      "detail": "Raw LaTeX visible as text in question stem: \\frac{7}{8}.",
+      "severity": "medium",
+      "reported": true,
+      "reportIds": [
+        "R014"
+      ]
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "check": "mcq_answer_comma_string",
+      "detail": "MCQ answer stored as single comma-delimited string ['A, B, D'] instead of separate elements.",
+      "severity": "high",
+      "reported": true,
+      "reportIds": [
+        "R020"
+      ]
+    },
+    {
+      "questionId": "68ecbacb2ec87a18deba1ad7",
+      "check": "wrong_chapter",
+      "detail": "Neuron action potential refractory period problem filed under Botany / 'The Living World'.",
+      "severity": "medium",
+      "reported": true,
+      "reportIds": [
+        "R023"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+[
+  {
+    "reportId": "R005",
+    "questionId": "68dea616d0cda73d07e93ae6",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "1"
+    },
+    "route": "faculty_review",
+    "confidence": 0.5,
+    "evidence": "Independent solver verification confirms the total flux is q/(2ε₀), which corresponds to n=1, contradicting the stored answer key of 2.",
+    "student_reply": "You are correct that n=1 is the right answer. I have forwarded this to our subject teacher to review the question and update the answer key accordingly."
+  },
+  {
+    "reportId": "R029",
+    "questionId": "68e8734442c06737d6e56da4",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Independent solvers confirm the coefficient of friction is 0.8, matching the stored answer key (A), while the student's claim of 0.4 is mathematically incorrect.",
+    "student_reply": "We have re-verified the calculation and confirmed that the coefficient of friction is 0.8, which matches option A. Your calculation likely missed that the friction force f is 80 N, derived from the system of equations F - f = 10 and 2F - f = 100."
+  },
+  {
+    "reportId": "R012",
+    "questionId": "61dffbec08489156b684bd22",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": [
+      {
+        "field": "question",
+        "find": "Epithellial tisue",
+        "replace": "Epithelial tissue"
+      }
+    ],
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The student correctly identified a spelling error in option (A) where 'Epithellial tisue' is misspelled.",
+    "student_reply": "You are correct that there is a spelling error in option (A). I have forwarded this to our subject teacher to review and correct the text."
+  },
+  {
+    "reportId": "R002",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 1.0,
+    "evidence": "Independent solvers and the stored solution derivation confirm the correct answer is 50 V (Option A), but the stored key is incorrectly set to C.",
+    "student_reply": "You are correct that the previous answer key was incorrect. The key has been updated to A, as the supply voltage is calculated as 50 V using the phasor sum formula."
+  },
+  {
+    "reportId": "R003",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 1.0,
+    "evidence": "The student correctly identified that the calculation results in 50 V, which contradicts the stored answer key C.",
+    "student_reply": "You are correct that the calculation results in 50 V, and the answer key has been updated from C to A. Thank you for pointing out this error."
+  },
+  {
+    "reportId": "R001",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 1.0,
+    "evidence": "The student correctly noted the discrepancy between the stored solution's derivation (50 V) and the stored answer key (C).",
+    "student_reply": "You are correct that the answer is 50 V, and I have updated the key from C to A. Thank you for pointing out this discrepancy."
+  },
+  {
+    "reportId": "R004",
+    "questionId": "68e870ef42c06737d6e565c4",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "D"
+    },
+    "route": "auto_apply",
+    "confidence": 1.0,
+    "evidence": "Independent solvers and the stored solution derivation consistently calculate the pressure as 4800 N/m^2, which corresponds to option (D), whereas the stored answer key incorrectly lists (A).",
+    "student_reply": "You are right, the correct answer is 4800 N/m^2 which corresponds to option (D). The answer key has been updated accordingly."
+  },
+  {
+    "reportId": "R008",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "A resistance of 40 ohm and an inductance are connected in series",
+      "replace": "A resistance of 40 ohm and an inductance of 95.5 mH are connected in series"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "Independent solvers confirmed the question is unsolvable as written because the inductance value is missing from the stem.",
+    "student_reply": "You are correct that the inductance value is missing from the question stem, making it impossible to calculate the impedance. Our subject teachers are currently reviewing the question to address this data error."
+  },
+  {
+    "reportId": "R007",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "A resistance of 40 ohm and an inductance are connected in series",
+      "replace": "A resistance of 40 ohm and an inductance of 95.5 mH are connected in series"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "Independent solvers confirmed the question is unsolvable as written because the inductance value is missing from the stem.",
+    "student_reply": "You are correct that the inductance value is missing from the question stem, making it impossible to calculate the inductive reactance and impedance. I have forwarded this to our subject faculty for a review and correction."
+  },
+  {
+    "reportId": "R034",
+    "questionId": "695ee00b88d7701e561aabc5",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": null,
+      "replace": "C"
+    },
+    "route": "faculty_review",
+    "confidence": 0.5,
+    "evidence": "Independent solvers confirm that Assertion (A) is false (resultant intensity is 2I0, not I0) and Reason (R) is false (intensity is not always the sum of individual intensities), making option (C) the correct choice.",
+    "student_reply": "You are correct that the original answer key was inaccurate. Our subject faculty is currently reviewing the question to update it to the correct option, C."
+  },
+  {
+    "reportId": "R010",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "(C) 10 m / s",
+      "replace": "(C) 10 m / s\n(D) 5 m / s"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The question stem only provides three options (A, B, C), which is a high-severity defect for an SCQ; a fourth option must be added to complete the set.",
+    "student_reply": "You are correct that the question is missing an option, and I have forwarded this to our subject faculty for immediate correction. The correct answer remains C, as the velocity of the centre of mass is calculated to be 10 m/s."
+  },
+  {
+    "reportId": "R009",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "(C) 10 m / s",
+      "replace": "(C) 10 m / s\n(D) 5 m / s"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The question stem only provides three options (A, B, C), which is a high-severity defect for an SCQ; a fourth option must be added to complete the set.",
+    "student_reply": "You are correct that an option is missing from this question. I have forwarded this to our subject faculty to add the missing option and ensure the question is complete."
+  },
+  {
+    "reportId": "R017",
+    "questionId": "6208e80a9cb2ab67dac61bd0",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The word 'mere' does not appear in the options; the student likely misread the text or is reporting a non-existent issue.",
+    "student_reply": "We have reviewed the question and confirmed that the options are correct as written, with no spelling errors present. The correct answer remains C because the understory receives light enriched in green wavelengths, which chlorophyll absorbs less efficiently."
+  },
+  {
+    "reportId": "R032",
+    "questionId": "68dea7c2387eea3d0d95f9bb",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.9,
+    "evidence": "The student is confusing units; the calculated shift is 0.08 m, which is equivalent to 8 cm, matching the stored answer key.",
+    "student_reply": "The calculated shift is 0.08 m, which is equivalent to 8 cm. You likely missed the unit conversion from meters to centimeters."
+  },
+  {
+    "reportId": "R026",
+    "questionId": "620e23cecc50543bc7db9186",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The question correctly tests the concept of outgroup analysis in cladistics, which is a standard topic within the Evolution chapter of the NEET biology syllabus.",
+    "student_reply": "This question is part of the Evolution chapter in the NEET syllabus, as it tests the concept of outgroup analysis in cladistics. Option B is correct because using a distantly related outgroup is the standard method for identifying ancestral character states."
+  },
+  {
+    "reportId": "R042",
+    "questionId": "63c7cce12981ed154ee92c94",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.9,
+    "evidence": "The question pertains to displacement current and capacitors, which belongs to the chapter 'Electromagnetic Waves', not 'Geometrical optics and optical instruments'.",
+    "student_reply": "You are correct that this question belongs to the Electromagnetic Waves chapter rather than Geometrical Optics. I have forwarded this to our subject faculty to update the chapter tagging accordingly."
+  },
+  {
+    "reportId": "R023",
+    "questionId": "68ecbacb2ec87a18deba1ad7",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The question pertains to neural physiology, which is correctly identified by the student as belonging to the 'Neural Control and Coordination' chapter rather than 'The Living World'.",
+    "student_reply": "You are correct that this question belongs in the Neural Control and Coordination chapter. I have forwarded this to our subject faculty to update the chapter tagging accordingly."
+  },
+  {
+    "reportId": "R038",
+    "questionId": "68f21df0941cda588bc0470b",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.9,
+    "evidence": "The question, answer key, and solution are mathematically sound and verified by independent solvers; the student's claim of a UI recording error is an app-level issue.",
+    "student_reply": "We have verified that option A is the correct answer based on the relation p = sqrt(2mK), where a fourfold increase in kinetic energy results in a doubling of momentum. If you experienced a technical glitch where your selection was not saved correctly, please refresh your browser or app to ensure your inputs are recorded properly."
+  },
+  {
+    "reportId": "R014",
+    "questionId": "63765a28f1d8416ae0408d89",
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "7/8"
+    },
+    "route": "auto_apply",
+    "confidence": 1.0,
+    "evidence": "The deterministic check confirmed a raw LaTeX markup leak ('\\frac') in the question stem, which is a display defect.",
+    "student_reply": "You are right that there was a display error in the question text, and I have corrected the LaTeX formatting. The correct answer remains C, which is 180 days."
+  },
+  {
+    "reportId": "R040",
+    "questionId": "6264197209f4fd65f58f5707",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "Independent solvers and the stored solution confirm that Golden rice is the correct answer for preventing vitamin A deficiency-related blindness, rendering the student's claim of 'wrong' incorrect.",
+    "student_reply": "We have verified the question and confirmed that option C is correct because Golden rice is specifically engineered to biosynthesize beta-carotene, which prevents vitamin A deficiency-related blindness. Please let us know which specific step in the explanation seemed off if you remain unsure."
+  },
+  {
+    "reportId": "R044",
+    "questionId": "68dea577d0cda73d07e9391c",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.9,
+    "evidence": "Independent solvers confirmed the potential difference is 14 V, matching the stored answer key and the derivation provided in the solution.",
+    "student_reply": "We have verified the calculation, and the potential difference is indeed 14 V. The potential at r=R/2 is 22 V and at r=2R is 8 V, resulting in a difference of 14 V."
+  },
+  {
+    "reportId": "R028",
+    "questionId": "6956d7bb23cb221e570d6013",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "Independent solvers confirm the derivation R = H leads to tan θ = 4, matching the stored answer key (B).",
+    "student_reply": "We have verified the derivation, and the correct angle of projection is tan^(-1)(4) because equating the range R = (u^2 sin 2θ)/g and height H = (u^2 sin^2 θ)/(2g) leads to tan θ = 4. Please check if you missed the factor of 2 in the range formula or the denominator in the height formula."
+  },
+  {
+    "reportId": "R022",
+    "questionId": "61ee6c9d90a1a968a168686b",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Choroid plexux",
+      "replace": "Choroid plexus"
+    },
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The student correctly identified a spelling error in option (D) where 'plexux' should be 'plexus'.",
+    "student_reply": "You are correct that there is a spelling error in option D, and I have forwarded this to our subject teacher for correction. The answer key remains B as Peyer's patches are located in the ileum."
+  },
+  {
+    "reportId": "R015",
+    "questionId": "6956d79788d7701e5617bc29",
+    "verdict": "defect",
+    "repair": "identical_options",
+    "edit": {
+      "field": "question",
+      "find": "(C) 0 W",
+      "replace": "(C) 50 W"
+    },
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The deterministic check confirms that options (B) and (C) are identical, which is a defect requiring a distractor update.",
+    "student_reply": "You are correct that options B and C are identical. A subject teacher is currently reviewing the question to update the distractors."
+  },
+  {
+    "reportId": "R016",
+    "questionId": "6263d75bdd44e265ef926d97",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "800 × g = (2) × (a 2 ) × 1 × g\na = 40 cm",
+      "replace": "800 × g = 2 × a^2 × 1 × g\n2a^2 = 800\na^2 = 400\na = 20 cm"
+    },
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The stored answer key 20 is correct, but the stored solution contains an arithmetic error in the derivation, incorrectly concluding a = 40 cm instead of 20 cm.",
+    "student_reply": "You are correct that the solution contains an error, and I have sent this to our subject faculty for a thorough review and correction. The answer key of 20 cm is currently being verified against the derivation to ensure the final explanation is accurate."
+  },
+  {
+    "reportId": "R018",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "= 5.469 × 10^(− 10) m = 5.47 \\AA \\lambda = (h)/(| p |) = (h)/(| I |) = 2.65 × 10^(− 18) J = 16.8 e V",
+      "replace": "Using the de-Broglie wavelength formula: \\lambda = h / \\sqrt{2mK}. Rearranging for kinetic energy K: K = h^2 / (2m\\lambda^2). Substituting h = 6.626 \\times 10^{-34} J s, m = 9.1 \\times 10^{-31} kg, and \\lambda = 0.3 \\times 10^{-9} m, we get K \\approx 2.69 \\times 10^{-19} J. Converting to eV: K \\approx (2.69 \\times 10^{-19}) / (1.6 \\times 10^{-19}) \\approx 16.8 eV."
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The stored solution contains irrelevant intermediate steps regarding 5.47 Angstroms that do not belong to this question, although the final answer is correct.",
+    "student_reply": "You are correct that the solution contains irrelevant steps, even though the final answer is right. I have sent this to our subject teacher to review and correct the explanation."
+  },
+  {
+    "reportId": "R019",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "= 5.469 × 10^(− 10) m = 5.47 \\AA \\lambda = (h)/(| p |) = (h)/(| I |) = 2.65 × 10^(− 18) J = 16.8 e V",
+      "replace": "Using the de-Broglie wavelength formula: \\lambda = h / \\sqrt{2mK}. Rearranging for kinetic energy K: K = h^2 / (2m\\lambda^2). Substituting h = 6.626 \\times 10^{-34} J s, m = 9.1 \\times 10^{-31} kg, and \\lambda = 0.3 \\times 10^{-9} m, we get K \\approx 2.69 \\times 10^{-19} J. Converting to eV: K \\approx (2.69 \\times 10^{-19}) / (1.6 \\times 10^{-19}) \\approx 16.8 eV."
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The student correctly identified that the solution text contains extraneous and confusing calculations (5.47 Angstrom) unrelated to the kinetic energy derivation.",
+    "student_reply": "You are correct that the current solution contains an error and irrelevant calculations. I have forwarded this to our subject faculty to review and correct the explanation while keeping the answer as option B."
+  },
+  {
+    "reportId": "R039",
+    "questionId": "68c801bc1b1dbc16dc93bf2b",
+    "verdict": "language_mode",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student is requesting the question in Hindi, which is a language preference issue rather than a content defect.",
+    "student_reply": "Currently, our platform provides questions in English to align with the standard format of competitive exams. We have noted your request for Hindi content and will consider it for future updates."
+  },
+  {
+    "reportId": "R013",
+    "questionId": "617fa18efd53ff1629ed890f",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student is questioning the inclusion of the exam source tag '(NEET 2019)', which is standard metadata and not a defect in the question content.",
+    "student_reply": "The tag NEET 2019 is simply metadata indicating the exam source, which does not affect the question content. We have verified the question and confirmed that option D is correct because the lamina is the green expanded part of the leaf containing veins and veinlets."
+  },
+  {
+    "reportId": "R030",
+    "questionId": "6956d7e988d7701e5617bd3e",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Independent solvers confirm the amplitude is 8 sqrt(2) m, matching the stored solution and answer key; the student's claim of 4 root 2 is mathematically incorrect.",
+    "student_reply": "We have re-verified the calculation and confirmed that the amplitude is 8√2 m. The error in your reasoning occurs when solving for A, as the angular frequency ω = π/8 and cos(π/4) = 1/√2 lead directly to 8√2 m."
+  },
+  {
+    "reportId": "R036",
+    "questionId": "60ca4feb6420652745f55522",
+    "verdict": "display_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student reported a UI display issue regarding option visibility, which is unrelated to the correctness of the question content, answer key, or solution.",
+    "student_reply": "We have verified the question and confirmed that option C is correct because the new force is 0.99 times the initial force, resulting in 99 N. Please try adjusting your screen orientation or zoom settings to view all options clearly."
+  },
+  {
+    "reportId": "R021",
+    "questionId": "68f21caf941cda588bc04365",
+    "verdict": "defect",
+    "repair": "type_mismatch",
+    "edit": {
+      "field": "answer",
+      "find": "['', 'B']",
+      "replace": "['B']"
+    },
+    "route": "auto_apply",
+    "confidence": 0.95,
+    "evidence": "The answer key contains an empty string artifact ['', 'B'] which is invalid for an MCQ type, causing potential UI/scoring issues.",
+    "student_reply": "You are correct that the answer key format was causing an issue, and I have updated it to 'B' to ensure proper scoring. Thank you for pointing this out."
+  },
+  {
+    "reportId": "R011",
+    "questionId": "68e872546e45ba37dcc16bc0",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": [
+      {
+        "field": "question",
+        "find": "(C) ",
+        "replace": "(C) 1 : 1"
+      },
+      {
+        "field": "solution",
+        "find": "F_(12) + F_(21) = 0\n| F_(12) | = | − F_(21) |",
+        "replace": "According to Newton's third law, the electrostatic force exerted by one charge on the other is equal in magnitude and opposite in direction. Therefore, the ratio of the forces is 1:1."
+      }
+    ],
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "Option (C) is blank and the stored solution is incomplete, while independent solvers confirm the correct ratio is 1:1.",
+    "student_reply": "You are correct that option C is currently blank, and I have sent this to our subject faculty for review and correction. The correct ratio for this problem is 1:1 based on Newton's third law."
+  },
+  {
+    "reportId": "R041",
+    "questionId": "6208e298fa399567e0878700",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student report contains only gibberish text and provides no actionable feedback regarding the question content.",
+    "student_reply": "We have thoroughly verified this question and confirmed that option A is correct because Julius von Sachs provided the evidence for glucose production in plants. Please let us know which specific step in the solution seemed unclear if you have further questions."
+  },
+  {
+    "reportId": "R043",
+    "questionId": "636283dbe3770c24f866e6d6",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student incorrectly assumes the ratio is 1:4, but independent solvers and the stored solution confirm the ratio is 4:1 based on the derivation sigma_B = N^(1/3) * sigma_s.",
+    "student_reply": "We have verified the question and the ratio is 4:1 because the surface charge density is proportional to the cube root of the number of drops. While the bigger drop has more area, the total charge increases by a factor of 64 while the area increases by a factor of 16, resulting in a 4:1 ratio."
+  },
+  {
+    "reportId": "R027",
+    "questionId": "6062ec84518e9535e120c422",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The report is a clear prompt injection attempt and does not contain a valid pedagogical critique of the question.",
+    "student_reply": "We have reviewed the question and confirmed that option A is the correct answer based on the calculation of the coefficient of cubical expansion as 3 times the linear expansion coefficient."
+  },
+  {
+    "reportId": "R006",
+    "questionId": "696a866665252c04fc1f81c2",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "The volume contraction of a solid copper cube, when subjected to a hydraulic pressure of 7 × 10^(6) P a , would be _ _ _ _ m m^(3) .",
+      "replace": "The volume contraction of a solid copper cube of side 10 cm, when subjected to a hydraulic pressure of 7 × 10^(6) P a , would be _ _ _ _ m m^(3) ."
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The question stem fails to provide the initial volume or side length of the cube, making the calculation of absolute volume contraction impossible without an assumption.",
+    "student_reply": "You are correct that the initial volume or side length is missing from the question stem. I have forwarded this to our subject faculty for a thorough review and correction."
+  },
+  {
+    "reportId": "R035",
+    "questionId": "66fe9dbe22132e5a70a3e579",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "Independent solvers confirm that Relaxin and Inhibin have distinct, non-antagonistic physiological roles, validating the stored answer key D.",
+    "student_reply": "We have reviewed the question and confirmed that option D is correct because Relaxin and Inhibin have distinct, non-antagonistic physiological roles. While other pairs listed function in opposition to regulate homeostasis, these two hormones serve entirely different functions in the body."
+  },
+  {
+    "reportId": "R025",
+    "questionId": "622df25ab70e4b50e44ff837",
+    "verdict": "defect",
+    "repair": "diagram",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 1.0,
+    "evidence": "The question stem explicitly references a figure ('as shown in figure') which is missing from the content, rendering the question incomplete.",
+    "student_reply": "You are correct that the figure is missing, which makes the question incomplete. I have forwarded this to our subject experts to add the diagram and ensure the question is clear."
+  },
+  {
+    "reportId": "R037",
+    "questionId": "68c9ae5afb6b2f16e2d43b1c",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student reported a loading issue, which is an app-related performance concern rather than a defect in the question content.",
+    "student_reply": "We have verified the question and confirmed that option D is correct because the stopping potential is calculated as 1.1 V based on the photoelectric equation. Regarding the loading issue, please ensure your app is updated to the latest version for optimal performance."
+  },
+  {
+    "reportId": "R020",
+    "questionId": "68c8153cfb6b2f16e2d3ceaf",
+    "verdict": "defect",
+    "repair": "solution_missing",
+    "edit": {
+      "field": "solution",
+      "find": "conceptual Based of field force\nF = q ( V × B )\nF = q E\n- Stored Solution Final Answer (Extracted via Semantic Audit): None",
+      "replace": "For a charged particle moving with initial velocity u: (A) Parallel to a uniform electric field, the force F=qE is parallel to velocity, resulting in a straight line. (B) Perpendicular to a uniform electric field, the particle experiences constant acceleration perpendicular to initial velocity, resulting in a parabolic path. (C) Parallel to a uniform magnetic field, the magnetic force F=q(v x B) is zero, so it moves in a straight line, not a helix. (D) Perpendicular to a uniform magnetic field, the particle experiences a constant centripetal magnetic force, resulting in circular motion. Thus, A, B, and D are correct."
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "The stored solution is incomplete and lacks the necessary derivation, while independent solvers confirm the keyed answer (A, B, D) is correct.",
+    "student_reply": "You are correct that A, B, and D are the right options. Our subject teacher is currently reviewing the solution to ensure the derivation is complete and clear."
+  },
+  {
+    "reportId": "R033",
+    "questionId": "68dea715387eea3d0d95f790",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "The student failed to apply significant figure rules correctly; the stored answer 3113 is correct based on the standard rule of retaining 4 significant digits in the final result.",
+    "student_reply": "The answer 3113 is correct because, according to standard significant figure rules, you must retain four significant digits in the final result after performing the calculation. Rounding the intermediate value 311.299 to four significant figures gives 311.3, which leads to 3113."
+  },
+  {
+    "reportId": "R031",
+    "questionId": "68dea619d0cda73d07e93aee",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 1.0,
+    "evidence": "Independent solvers confirm the angular displacement difference equation (pi/8)*t^2 = 2*pi*n yields t=4 for n=1, matching the stored solution and key.",
+    "student_reply": "We have verified the question and the answer is 4 seconds because the difference in angular displacement (pi/8)*t^2 must equal 2*pi for the first alignment. Please recheck your calculation for the difference in angular acceleration, as t^2 = 16 leads to t = 4 seconds."
+  },
+  {
+    "reportId": "R024",
+    "questionId": "5fc60508028950133eac8963",
+    "verdict": "defect",
+    "repair": "answer_form",
+    "edit": {
+      "field": "question",
+      "find": "frictional force is equal to",
+      "replace": "frictional force is equal to (in Newtons)"
+    },
+    "route": "faculty_review",
+    "confidence": 0.9,
+    "evidence": "The question is an integer type question that does not specify the required units, which is a standard requirement for clarity in competitive exam questions.",
+    "student_reply": "You are correct that the unit was missing from the question statement. I have forwarded this to our subject teacher for review to ensure the question is updated for clarity."
+  }
+]

@@ -1,0 +1,335 @@
+{
+  "summary": {
+    "total_detections": 14,
+    "deterministic_defects": 9,
+    "heuristic_signals": 5,
+    "unique_questions_affected": 13,
+    "reported_defects": 8,
+    "unreported_defects": 1
+  },
+  "unreported_defects": [
+    {
+      "questionId": "68dea87d387eea3d0d95fbe3",
+      "check": "empty_mathml_elements",
+      "detail": "Corrupted MathML containing empty base or container element without children.",
+      "severity": "low",
+      "signal_only": false,
+      "reported": false,
+      "reportIds": []
+    }
+  ],
+  "deterministic_defects": [
+    {
+      "questionId": "68dea87d387eea3d0d95fbe3",
+      "check": "empty_mathml_elements",
+      "detail": "Corrupted MathML containing empty base or container element without children.",
+      "severity": "low",
+      "signal_only": false,
+      "reported": false,
+      "reportIds": []
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "blank_option",
+      "detail": "Option (C) exists but its body is completely blank/empty.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "key_points_to_blank_option",
+      "detail": "Answer key is set to (C), but option (C) is blank.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "check": "identical_options",
+      "detail": "Options (B) and (C) have identical text: '0 W'.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R015"
+      ]
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "check": "figure_referenced_without_image",
+      "detail": "Question stem explicitly references a figure/diagram ('as shown in figure'), but no image or <img> tag exists.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R025"
+      ]
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "check": "answer_format_invalid_for_type",
+      "detail": "MCQ answer list contains an empty string artifact: ['', 'B'].",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R021"
+      ]
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "check": "missing_option_letter",
+      "detail": "Question has only 3 options (A, B, C); expected option(s) D are missing.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R010",
+        "R009"
+      ]
+    },
+    {
+      "questionId": "63765a28f1d8416ae0408d89",
+      "check": "raw_latex_leak",
+      "detail": "Raw LaTeX markup visible as plain text in question stem: \\frac.",
+      "severity": "medium",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R014"
+      ]
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "check": "answer_format_invalid_for_type",
+      "detail": "MCQ answer stored as single comma-delimited string ['A, B, D'] instead of list of individual options.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R020"
+      ]
+    }
+  ],
+  "heuristic_signals": [
+    {
+      "questionId": "60ca4feb6420652745f55522",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (0.9, 0.99, 1.1) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R036"
+      ]
+    },
+    {
+      "questionId": "68dea715387eea3d0d95f790",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (311.299, 311.3) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R033"
+      ]
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (2.65, 5.469, 5.47) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R018",
+        "R019"
+      ]
+    },
+    {
+      "questionId": "68c801bc1b1dbc16dc93bf2b",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (1.574, 1.6, 1.638, 9.6) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R039"
+      ]
+    },
+    {
+      "questionId": "68dea7c2387eea3d0d95f9bb",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (0.08, 0.4) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R032"
+      ]
+    }
+  ],
+  "detections": [
+    {
+      "questionId": "60ca4feb6420652745f55522",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (0.9, 0.99, 1.1) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R036"
+      ]
+    },
+    {
+      "questionId": "68dea715387eea3d0d95f790",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (311.299, 311.3) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R033"
+      ]
+    },
+    {
+      "questionId": "68dea87d387eea3d0d95fbe3",
+      "check": "empty_mathml_elements",
+      "detail": "Corrupted MathML containing empty base or container element without children.",
+      "severity": "low",
+      "signal_only": false,
+      "reported": false,
+      "reportIds": []
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "blank_option",
+      "detail": "Option (C) exists but its body is completely blank/empty.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "68e872546e45ba37dcc16bc0",
+      "check": "key_points_to_blank_option",
+      "detail": "Answer key is set to (C), but option (C) is blank.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R011"
+      ]
+    },
+    {
+      "questionId": "6956d79788d7701e5617bc29",
+      "check": "identical_options",
+      "detail": "Options (B) and (C) have identical text: '0 W'.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R015"
+      ]
+    },
+    {
+      "questionId": "622df25ab70e4b50e44ff837",
+      "check": "figure_referenced_without_image",
+      "detail": "Question stem explicitly references a figure/diagram ('as shown in figure'), but no image or <img> tag exists.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R025"
+      ]
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (2.65, 5.469, 5.47) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R018",
+        "R019"
+      ]
+    },
+    {
+      "questionId": "68f21caf941cda588bc04365",
+      "check": "answer_format_invalid_for_type",
+      "detail": "MCQ answer list contains an empty string artifact: ['', 'B'].",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R021"
+      ]
+    },
+    {
+      "questionId": "68c801bc1b1dbc16dc93bf2b",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (1.574, 1.6, 1.638, 9.6) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R039"
+      ]
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "check": "missing_option_letter",
+      "detail": "Question has only 3 options (A, B, C); expected option(s) D are missing.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R010",
+        "R009"
+      ]
+    },
+    {
+      "questionId": "63765a28f1d8416ae0408d89",
+      "check": "raw_latex_leak",
+      "detail": "Raw LaTeX markup visible as plain text in question stem: \\frac.",
+      "severity": "medium",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R014"
+      ]
+    },
+    {
+      "questionId": "68c8153cfb6b2f16e2d3ceaf",
+      "check": "answer_format_invalid_for_type",
+      "detail": "MCQ answer stored as single comma-delimited string ['A, B, D'] instead of list of individual options.",
+      "severity": "high",
+      "signal_only": false,
+      "reported": true,
+      "reportIds": [
+        "R020"
+      ]
+    },
+    {
+      "questionId": "68dea7c2387eea3d0d95f9bb",
+      "check": "solution_numbers_not_in_stem",
+      "detail": "Signal only: Solution uses intermediate numeric values (0.08, 0.4) not found in question stem (e.g. 0.9/1.1 from 10% change). Informational heuristic only; must never be sole ground for defect.",
+      "severity": "signal_only",
+      "signal_only": true,
+      "reported": true,
+      "reportIds": [
+        "R032"
+      ]
+    }
+  ]
+}

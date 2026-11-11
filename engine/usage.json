@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "total_calls": 562,
+    "total_prompt_tokens": 767404,
+    "total_candidate_tokens": 82159,
+    "total_tokens": 1101154,
+    "cached_calls": 1214
+  },
+  "stages": {
+    "audit": {
+      "calls": 86,
+      "prompt_tokens": 95412,
+      "candidate_tokens": 4862,
+      "total_tokens": 100274,
+      "cached_calls": 42
+    },
+    "solver_a": {
+      "calls": 89,
+      "prompt_tokens": 57251,
+      "candidate_tokens": 21587,
+      "total_tokens": 84515,
+      "cached_calls": 390
+    },
+    "solver_b": {
+      "calls": 85,
+      "prompt_tokens": 55609,
+      "candidate_tokens": 22247,
+      "total_tokens": 82371,
+      "cached_calls": 390
+    },
+    "intake": {
+      "calls": 88,
+      "prompt_tokens": 43468,
+      "candidate_tokens": 4580,
+      "total_tokens": 48048,
+      "cached_calls": 264
+    },
+    "judge": {
+      "calls": 156,
+      "prompt_tokens": 463295,
+      "candidate_tokens": 22786,
+      "total_tokens": 486081,
+      "cached_calls": 115
+    },
+    "solver_c": {
+      "calls": 14,
+      "prompt_tokens": 9688,
+      "candidate_tokens": 3699,
+      "total_tokens": 254786,
+      "cached_calls": 13
+    },
+    "reply": {
+      "calls": 44,
+      "prompt_tokens": 42681,
+      "candidate_tokens": 2398,
+      "total_tokens": 45079,
+      "cached_calls": 0
+    }
+  }
+}

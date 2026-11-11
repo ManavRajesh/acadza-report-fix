@@ -1,0 +1,160 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, 'STIX Two Text', 'STIX Two Math', Cambria, serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Dark default (GitHub PR review / Linear style) */
+  --bg: #141517;
+  --surface: #1b1c1f;
+  --surface-hover: #222428;
+  --border: #2a2c30;
+  --text: #e8e8e6;
+  --muted: #9b9ea4;
+  --faint: #6b6e74;
+
+  /* Accent */
+  --accent: #4f8cff;
+  --accent-hover: #3b7ced;
+
+  /* Status colors (semantic only, small usage) */
+  --red: #e5534b;
+  --red-bg: rgba(229, 83, 75, 0.12);
+  --amber: #d4a72c;
+  --amber-bg: rgba(212, 167, 44, 0.12);
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.12);
+  --gray: #6b6e74;
+
+  --radius: 6px;
+}
+
+[data-theme='light'] {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --surface-hover: #f5f4f0;
+  --border: #e6e5e2;
+  --text: #1d1d1b;
+  --muted: #6b6b67;
+  --faint: #9b9b96;
+
+  --accent: #4f8cff;
+  --accent-hover: #3b7ced;
+
+  --red: #cf222e;
+  --red-bg: #ffebe9;
+  --amber: #9a6700;
+  --amber-bg: #fff8c5;
+  --green: #1a7f37;
+  --green-bg: #dafbe1;
+  --gray: #6b6b67;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Serif Question & Math Typography */
+.question-reading {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+math {
+  font-family: var(--font-serif);
+  font-size: 1.05em;
+  padding: 0 2px;
+  vertical-align: -0.1em;
+}
+
+/* Monospace IDs and tiny keys */
+.mono-id {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--faint);
+}
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  padding: 1px 4px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--faint);
+}
+
+/* Question HTML Content styling & production normalization */
+.question-html, .question-html * {
+  color: var(--text) !important;
+  background: transparent !important;
+}
+
+.question-html h1,
+.question-html h2,
+.question-html h3,
+.question-html h4,
+.question-html h5,
+.question-html h6 {
+  font-size: 1em !important;
+  font-weight: normal !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+}
+
+/* Inline Diff styling */
+.question-html del.diff-del, del.diff-del {
+  background-color: var(--red-bg) !important;
+  color: var(--red) !important;
+  text-decoration: line-through;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.question-html ins.diff-ins, ins.diff-ins {
+  background-color: var(--green-bg) !important;
+  color: var(--green) !important;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+/* Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Focus styles */
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

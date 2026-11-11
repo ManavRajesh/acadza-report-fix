@@ -1,0 +1,11 @@
+{
+  "name": "acadza-report-fix-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix console run dev",
+    "build": "npm --prefix console run build",
+    "preview": "npm --prefix console run preview"
+  }
+}
+
